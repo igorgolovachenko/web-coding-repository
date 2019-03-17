@@ -16,7 +16,7 @@ h1 {
 color: #ffffff;
 font-size: 45px;
 font-weight: 300;
-font-height: 60px;
+line-height: 60px;
 text-transform: uppercase;
 margin-bottom: 90px;
 }
@@ -25,7 +25,7 @@ h1 .lg {
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
-        display: block;
+    display: block;
     letter-spacing: -3px;
 }
 
@@ -985,6 +985,7 @@ header {
 
 .blog-list__item {
     width: 555px;
+    margin-bottom: 60px;
     /* position: relative; */
 }
 
@@ -997,6 +998,19 @@ header {
 .blog-list__img img {
     display: block;
     min-height: 300px;
+}
+
+.blog-list__img:hover .blog-list__title {
+    color:  #f39c12;
+}
+
+.blog-list__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
 }
 
 .blog-list__header {
@@ -1044,4 +1058,15 @@ header {
 
 .blog-list__info {
     padding: 0 17px 0 40px;
+}
+
+.blog-list__info p {
+    padding-bottom: 28px;
+    line-height: 25px;
+}
+
+.blog-list__info .btn-warning {
+    height: 35px;
+    font-size: 14px;
+    padding: 8px 27px 0;
 }
