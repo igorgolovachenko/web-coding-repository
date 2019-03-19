@@ -396,10 +396,20 @@ header {
 }
 
 .team-list__item {
+    display: flex;
+    flex-direction: column;
     width: 269px;
     padding: 25px 15px 30px;
     text-align: center;
     border-top: 4px solid transparent;
+}
+
+.team-list__item .social {
+    dispaly: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
 }
 
 .team-list__item:hover {
@@ -413,6 +423,7 @@ header {
 
 .team-list__img {
     display: flex;
+    flex: none;
     align-items: center;
     justify-content: center;
     font-size: 62px;
@@ -1053,7 +1064,6 @@ header {
 .blog-list__date span {
     display: block;
     white-space: nowrap;
-    
 }
 
 .blog-list__info {
@@ -1069,4 +1079,38 @@ header {
     height: 35px;
     font-size: 14px;
     padding: 8px 27px 0;
+}
+
+
+/*clients*/
+
+.clients h2 {
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.clients-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.clients-list__item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 257px;
+    height: 162px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+   
+}
+
+.clients-list__item img {
+    max-width: 100%;
+    display: block;
 }
