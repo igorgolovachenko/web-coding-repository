@@ -496,6 +496,8 @@ textarea.form-control {
 .team-list__img:after {
     content: "";
     display: block;
+    left: -7px;
+    top: -7px;
     position: absolute;
     width: 202px;
     height: 202px;
@@ -1237,3 +1239,62 @@ textarea.form-control {
     justify-content: center;
 }
 
+/* map */
+
+#map {
+    overflow: hidden;
+    position: relative;
+}
+
+#map:after, #map:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #ffffff;
+    border-left: 100vw solid transparent;
+}
+
+#map:before {
+    top: 0;
+    right: 0;
+    transform: rotate(180deg)
+}
+
+.footer-flex {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.footer-flex .social {
+    margin-left: auto;
+}
+
+.footer-flex .social__link .fab {
+    font-size: 20px;
+    margin: 5px 7px 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    color: #0d0d0d;
+}
+
+.footer-flex .social__link .fab:hover {
+    color: #f39c12;
+}
+
+.copyright {
+    margin: 5px 0 10px; 
+    color: #0d0d0d;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+/* 12.04 видео 12 пит */
