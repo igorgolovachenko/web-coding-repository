@@ -139,11 +139,17 @@ header {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 .btn-warning {
     color: #0d0d0d;
     border-color: #f39c12; 
+}
+
+.btn-sm {
+    height: 38px;
+    padding-top: 9px;
 }
 
 .btn:hover {
@@ -152,6 +158,57 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     border-color: #f39c12;
+}
+
+input.btn, button.btn {
+    padding-top: 0 !important;
+
+}
+
+/*forms*/
+
+.form-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-field__icon {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #808080;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.form-control {
+    display: block;
+    padding: 0 70px 0 25px;
+    width: 100%;
+    height: 45px;
+    border: 2px solid #d9d9d9;
+    background-color: #ffffff;
+    color: #808080;
+    font-family: "Open Sans";
+    font-size:  15px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #f39c12;
+}
+
+.form-control:focus + .form-field__icon {
+    color: #f39c12;
+}
+
+textarea.form-control {
+    max-width: 100%;
+    min-height: 125px;
+    resize: none;
+    padding-top: 10px;
 }
 
 .section {
@@ -1107,10 +1164,76 @@ header {
     width: 257px;
     height: 162px;
     border: 2px solid rgba(255, 255, 255, 0.25);
-   
+    padding: 15px;
+}
+
+.clients-list__item a:hover {
+    border-color: rgba(255, 255, 255, 0.8)
 }
 
 .clients-list__item img {
     max-width: 100%;
     display: block;
 }
+
+/*contacts*/
+
+.contact-wrap {
+    display: flex;
+}
+
+.contact-wrap__left {
+    width: 53%;
+}
+
+.contact-wrap__right {
+    width: 47%;
+    flex-shrink: 47%;
+    padding-left: 60px;
+}
+
+.contact-wrap h6 {
+    margin-bottom: 28px;
+}
+
+.contact-wrap p {
+    margin-bottom: 35px;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list__item {
+    position: relative;
+    padding-left: 50px;
+    color: #0d0d0d;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.32px;
+}
+
+.contact-list__item a {
+    color: #0d0d0d;
+}
+
+.contact-list__item a:hover {
+    text-decoration: none;
+    color: #f39c12;
+}
+
+.contact-list__icon {
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
